@@ -61,89 +61,19 @@
             <h1>Nuestros Proyectos</h1>
             <p class="portafolio-descripcion">Descubre la calidad y profesionalismo en cada uno de nuestros trabajos realizados.</p>
             
-            <div class="proyectos-grid">
-                <div class="proyecto">
-                    <img src="img/proyectos/1.jpg" alt="Proyecto de herrería: Portón de seguridad con diseño moderno" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/2.jpg" alt="Construcción de muro de tablaroca con acabado profesional" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/3.jpg" alt="Instalación de ventanas de herrería con protección" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/4.jpg" alt="Remodelación completa de baño con loseta moderna" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/5.jpg" alt="Barandal de herrería para escalera con diseño contemporáneo" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/6.jpg" alt="Instalación eléctrica residencial con acabado profesional" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/7.jpg" alt="Puerta de herrería con diseño personalizado" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/8.jpg" alt="Construcción de muro divisorio con acabado fino" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/9.jpg" alt="Ventana de herrería con protección y diseño moderno" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/10.jpg" alt="Instalación de plomería en baño residencial" loading="lazy">
-                </div>
-                <!-- Existing first 10 images -->
-                <div class="proyecto">
-                    <img src="img/proyectos/12.jpg" alt="Instalación de piso cerámico en área residencial" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/13.jpg" alt="Portón de herrería con diseño geométrico" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/16.jpg" alt="Construcción de muro de contención" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/17.jpg" alt="Barandal de herrería para balcón" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/18.jpg" alt="Instalación de sistema eléctrico comercial" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/19.jpg" alt="Puerta principal de herrería con vidrio templado" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/20.jpg" alt="Construcción de escalera con acabado en concreto pulido" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/21.jpg" alt="Reja perimetral de herrería con diseño de seguridad" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/22.jpg" alt="Instalación de plomería en cocina industrial" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/23.jpg" alt="Estructura metálica para pérgola" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/24.jpg" alt="Remodelación integral de local comercial" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/25.jpg" alt="Portón corredizo de herrería automatizado" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/26.jpg" alt="Construcción de barda perimetral con acabado texturizado" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/27.jpg" alt="Ventanas de herrería estilo industrial" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/28.jpg" alt="Instalación de sistema hidráulico residencial" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/29.jpg" alt="Estructura metálica para local comercial" loading="lazy">
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyectos/30.jpg" alt="Proyecto integral de construcción residencial" loading="lazy">
-                </div>
+            <div class="filter-buttons">
+                <button class="toggle-filters">Filtrar por Servicio ▼</button>
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="herreria">Herrería</button>
+                <button class="filter-btn" data-filter="plomeria">Plomería</button>
+                <button class="filter-btn" data-filter="tablaroca">Tablaroca</button>
+                <button class="filter-btn" data-filter="losetas">Losetas</button>
+                <button class="filter-btn" data-filter="electricidad">Electricidad</button>
+                <button class="filter-btn" data-filter="albañileria">Albañilería</button>
+            </div>
+            
+            <div class="proyectos-grid" id="proyectos-container">
+                <!-- Projects will be dynamically inserted here -->
             </div>
         </div>
     </section>
@@ -190,7 +120,9 @@
     <!-- Add before </body> -->
     <div class="modal" id="imageModal">
         <span class="close-modal">&times;</span>
+        <button class="modal-nav prev">&lt;</button>
         <img class="modal-content" id="modalImage">
+        <button class="modal-nav next">&gt;</button>
     </div>
 </body>
 </html>
